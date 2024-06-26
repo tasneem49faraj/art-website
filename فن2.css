@@ -1,0 +1,364 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  margin: 40px;
+  text-align: right;
+}
+.hh {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button {
+  z-index: 000;
+  margin-left: 20px;
+  color: #fff;
+}
+.tit1 {
+  z-index: 000;
+  margin-right: 20px;
+  font-family: "Reem Kufi";
+  font-style: normal;
+  margin-top: -30px;
+  font-size: 60px;
+
+  color: #fff;
+}
+
+.scroll {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  height: 80px;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 100px;
+  opacity: 0.8;
+}
+.scroll2 {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  height: 80px;
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 100px;
+  opacity: 0.8;
+}
+.scroll3 {
+  position: relative;
+  top: 200px;
+  background-color: #fff;
+  text-align: center;
+  height: 80px;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 100px;
+  opacity: 1;
+}
+.tit2 {
+  z-index: 000;
+  opacity: 2;
+  font-family: "Reem Kufi";
+  font-style: normal;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #9fe2bf;
+}
+.contaner {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+}
+
+.tit3 {
+  font-family: "Reem Kufi";
+  font-style: normal;
+  padding: 10px;
+  font-size: 40px;
+  padding-left: 150px;
+  color: #9fe2bf;
+}
+.home video {
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec2 {
+  margin-top: 200px;
+  background-color: #9fe2bf;
+  width: 100%;
+  height: 300vh;
+  margin-top: 90px;
+}
+
+.search {
+  width: 50%;
+
+  border: 3px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  position: relative;
+  top: 250px;
+  left: 25%;
+}
+.search .fa-solid {
+  color: #fff;
+  padding: 10px;
+}
+.search input {
+  border: none;
+  outline: none;
+  text-align: right;
+  font-size: 18px;
+  background-color: #9fe2bf;
+  padding: 10px;
+  width: 90%;
+}
+.broduct .box .card .small-card .fa-solid {
+  color: #9fe2bf;
+}
+
+.box {
+  width: 60%;
+  margin: 0 225px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px 0;
+  opacity: 1;
+}
+.broduct .box .card .img img {
+  width: 100px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+.broduct .box .card .img:hover img {
+  transform: scale(1.1);
+}
+.broduct .box .card .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.broduct.active {
+  margin-top: 300px;
+  display: block;
+}
+.broduct {
+  display: none;
+}
+.broduct .box .card .product-text h2 {
+  font-size: 23px;
+  margin: 10px;
+}
+.broduct .box .card .product-text .gassan {
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+.broduct .box .card .product-text h3 {
+  margin: 5px;
+}
+.broduct .box .card {
+  width: 200px;
+  height: 320px;
+  box-shadow: 0 0 8px #9fe2bf;
+  border-radius: 9px;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin: 0 15px;
+  opacity: 0;
+}
+.broduct .box .card {
+  opacity: 1;
+}
+.broduct .box .card .small-card {
+  display: flex;
+  flex-flow: column;
+  margin: 10px 0;
+  transform: translateX(-20px);
+  transition: 0.3s;
+  position: absolute;
+  opacity: 0;
+}
+.broduct .box .card:hover .small-card {
+  transform: translateX(2px);
+  opacity: 1;
+}
+.broduct .box .card .small-card i {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 2px 0;
+  line-height: 40px;
+  border: 2px solid #9fe2bf;
+  transition: 0.2s;
+}
+.broduct .box .card .broduct-stars {
+  color: orange;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+.broduct .box .card .btn {
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px 50px;
+  background-color: #9fe2bf;
+  border-radius: 5px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+.pagination {
+  width: 800px;
+  margin: 40px 350px;
+}
+
+.prev,
+.next {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 45px;
+
+  cursor: pointer;
+  color: #9fe2bf;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 28px;
+  box-shadow: 0 5px rgb(1, 1, 1/10%);
+
+  text-align: center;
+  width: 20%;
+}
+
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+.prev:hover {
+  transform: translateX(-5px);
+}
+.next:hover {
+  transform: translateX(5px);
+}
+
+.prev.disabled,
+.next.disabled {
+  background-color: #f6f3f3;
+}
+.indicators {
+  width: 60%;
+  float: left;
+}
+.indicators ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+.indicators ul li {
+  display: inline-block;
+  background-color: #fff;
+  color: #9fe2bf;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 0 2px;
+  line-height: 28px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.indicators ul li.active {
+  color: #fff;
+  background-color: #ccc;
+}
+.contanir2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  right: -105%;
+  top: 0;
+  z-index: 10000;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+.contanir2.active {
+  right: 0%;
+}
+.book {
+  background: #fff;
+  padding: 100px;
+  width: 270px;
+  height: 370px;
+}
+.imgg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgg img {
+  width: 250px;
+
+  border-radius: 50%;
+}
+.text {
+  text-align: center;
+}
+.text h3 {
+  font-size: 30px;
+  color: #9fe2bf;
+  font-family: "Reem Kufi";
+  font-style: normal;
+  font-weight: 500;
+  padding: 1px;
+}
+.text span {
+  font-size: 20px;
+  color: #9fe2bf;
+}
+.bttn {
+  color: #9fe2bf;
+  text-align: center;
+  margin-top: 20px;
+}
+.bttn i {
+  font-size: 50px;
+  cursor: pointer;
+}
+.btnn {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #9fe2bf;
+  padding: 10px 100px;
+  border-radius: 90px;
+}
+.btnn a {
+  text-decoration: none;
+  color: #fff;
+}
+.contanir2 #close-login-btn {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  font-size: 2.4rem;
+  color: #9fe2bf;
+  cursor: pointer;
+}
